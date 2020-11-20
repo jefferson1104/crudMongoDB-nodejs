@@ -22,5 +22,4 @@ import { studentRouter } from './routes/studentRouter.js';
 const app = express();
 app.use(express.json());
 app.use(studentRouter);
-app.listen(3000, () => console.log('API Iniciada'));
-
+app.listen(process.env.PORT || 3000, () => console.log('API Iniciada'));
